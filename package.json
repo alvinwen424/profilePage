@@ -1,0 +1,22 @@
+{
+  "name": "profile_page",
+  "version": "1.0.0",
+  "description": "contains all the info of Alvin Wen",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvinwen424/profilePage.git"
+  },
+  "author": "Alvin Wen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvinwen424/profilePage/issues"
+  },
+  "homepage": "https://github.com/alvinwen424/profilePage#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
