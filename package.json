@@ -2,9 +2,13 @@
   "name": "profile_page",
   "version": "1.0.0",
   "description": "contains all the info of Alvin Wen",
-  "main": "index.js",
+  "main": "app/main.jsx",
   "scripts": {
-    "test": "testem"
+    "test": "testem",
+    "start": "node ./index.js",
+    "build": "webpack -w",
+    "start-dev": "webpack -w &amp; nodemon ./index.js",
+    "build-watch": "npm run build -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,25 @@
   },
   "homepage": "https://github.com/alvinwen424/profilePage#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "babel-preset-stage-2": "^6.18.0",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-pdf": "^2.1.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.6.0"
   }
 }
